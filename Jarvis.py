@@ -1,8 +1,7 @@
-# https://www.youtube.com/watch?v=AWvsXxDtEkU
 import speech_recognition as sr
 
-listener = sr.Recognizer() 
-try: 
+listener = sr.Recognizer()
+try:
     with sr.Microphone() as source:
         voice = listener.listen(source)
         command = listener.recognize_google(voice)
